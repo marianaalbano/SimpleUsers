@@ -1,0 +1,43 @@
+{% extends "menu.html" %}
+
+{% block content %}
+{% if message %}
+<br>
+<br>
+<div class="alert alert-info" role="alert">
+  {{message}}
+</div>
+{% endif %}
+<br>
+<br>
+
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading"><b>Lista de usuários</b></div>
+            <div class="panel-body">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Nome</th>
+                      <th>Endereco</th>
+                      <th>Telefone</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  {% for u in users %}
+                  {% if users %}
+                    <tr>
+                      <th scope="row">#</th>
+                      <td>{{ u.nome }}</td>
+                      <td>{{ u.endereco }}</td>
+                      <td>{{ u.telefone }}</td>
+                    </tr>
+                    {% endif %}
+                  {% endfor %}
+                  </tbody>
+                </table>
+            </div>
+    </div>
+</div>
+{% endblock %}
