@@ -1,2 +1,7 @@
-*idea
+*idea/
 *.pyc
+mongodb/*.pyc
+mongodb/Model/*.pyc
+sql/*.pyc
+sql/blueprints/*.pyc
+sql/Model/*.pyc
