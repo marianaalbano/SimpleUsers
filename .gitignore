@@ -5,3 +5,4 @@ mongodb/Model/*.pyc
 sql/*.pyc
 sql/blueprints/*.pyc
 sql/Model/*.pyc
+sql/Model/test.db
